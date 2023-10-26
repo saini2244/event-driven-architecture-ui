@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { addUser } from './redux/action';
+import { addUserClicked } from './redux/action';
 
 export default function AddUser() {
     const [inputs, setInputs] = useState({});
@@ -12,7 +12,7 @@ export default function AddUser() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        addUser(inputs);
+        addUserClicked(inputs);
     }
 
     return (
